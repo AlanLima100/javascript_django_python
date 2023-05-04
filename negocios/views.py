@@ -1,4 +1,4 @@
-from django.views.generic import FormView
+from django.views.generic import FormView, TemplateView
 from django.urls import reverse_lazy
 from django.contrib import messages
 
@@ -26,3 +26,6 @@ class IndexView(FormView):
         messages.error(self.request, 'Erro ao enviar o e-mail')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
 
+
+class CurriculoView(TemplateView):
+    template_name = 'curriculo.html'
