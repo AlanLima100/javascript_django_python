@@ -74,21 +74,6 @@ class Recurso(Base):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Funcionario(Base):
     nome = models.CharField('Nome', max_length=100)
     cargo = models.ForeignKey('negocios.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)

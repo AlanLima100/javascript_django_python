@@ -87,7 +87,6 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 #     }
 # }
 
-
 DATABASES = {
     'default': dj_database_url.config()
 }
